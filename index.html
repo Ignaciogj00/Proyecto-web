@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicio Reparación Apple</title>
+    <link rel="icon" type="image/png" href="AppleIcon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="functions.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", cargarPantalla());
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Repara aquí tu Iphone</h1>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="AppleLogo.png" alt="Logo">
+            <div class="video-container">
+                <video width="560" height="315" controls>
+                    <source src="servApple.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento <code>video</code>.
+                </video>
+            </div>
+        </div>
+        <section class="promo">
+            <h2>Promocionando tu producto/servicio</h2>
+            <p>Aquí va el contenido principal promocionando tu producto/servicio, incluyendo vídeo/audio, listado de "pros", titulares/textos adicionales u otros contenidos relevantes.</p>
+            <button onclick="openNewPage()">Reservar/Comprar</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos/Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p>Ignacio S.A Polígono Guadalhorce 29004</p>
+            <p>Contacto: tuemail@example.com</p>
+        </div>
+    </footer>
+
+    <!-- Script para cambiar entre idiomas -->
+    <script>
+        // Ejemplo de criterio: si el día de la semana es viernes, cambiar el color de fondo
+        var currentDate = new Date();
+
+        if (currentDate.getDay() == 5) { // 5 representa el viernes (0 es domingo, 1 lunes, ...)
+            document.body.style.background = "#0000ff"; // Color azul para el viernes
+        }
+
+        function changeLanguage(lang) {
+            const langElements = document.querySelectorAll('[lang]');
+            langElements.forEach(element => {
+                element.style.display = element.lang === lang ? 'block' : 'none';
+            });
+        }
+        function openNewPage(){
+            window.open("https://paypal.com");
+        }
+    </script>
+</body>
+</html>

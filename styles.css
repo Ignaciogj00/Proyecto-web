@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.Logo {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: right;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.promo {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.video-container {
+    margin-left: 60%;
+}
+
+/* Lo que viene a continuación se aplica si se reduce la pantalla */
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    .promo {
+        flex: 1;
+    }
+
+    .video-container {
+        flex: 1;
+        margin-left: 20px; /* Espacio entre la promo y el video */
+    }
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .promo {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
